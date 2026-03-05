@@ -1,0 +1,113 @@
+:root {
+  --bg: #0f172a;
+  --surface: #111827;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #cbd5e1;
+  --accent: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  background: var(--surface);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#course-title {
+  display: block;          /* required */
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.navigation {
+  display: flex;           /* required */
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.navigation a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  transition: transform 120ms ease, background-color 120ms ease, color 120ms ease;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+  background: var(--accent);   /* hover effect required */
+  color: #00121a;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+main {
+  max-width: 960px;     /* limited width + centered required */
+  margin: 1.5rem auto;
+  padding: 0 1rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+/* Grid layout for the cards (required) */
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+/* On wider screens, display cards in a grid */
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  border-radius: 0.6rem;
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.card a {
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
