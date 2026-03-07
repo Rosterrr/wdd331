@@ -1,0 +1,185 @@
+:root {
+  --header: #1f5b7a;
+  --nav: #333333;
+  --page-bg: #ffffff;
+  --text: #111827;
+  --card-border: #c9c9c9;
+  --card-head: #1f5b7a;
+  --link: #1b4ed8;
+  --footer: #1f5b7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* HEADER */
+header {
+  background: var(--header);
+  color: #fff;
+  padding: 1rem 1rem 0;
+}
+
+#course-title {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 0.75rem;
+}
+
+/* NAVIGATION */
+.navigation {
+  background: var(--nav);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.9rem 1.2rem;
+  display: block;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.navigation a:hover {
+  background: #555;
+  transform: translateY(-1px);
+}
+
+/* MAIN LAYOUT */
+main {
+  max-width: 1050px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 2rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 1rem 0 1.5rem;
+}
+
+/* DESKTOP GRID */
+@media (min-width: 900px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+}
+
+/* CARDS */
+.card {
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: var(--card-head);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.card > *:not(h2) {
+  padding: 1rem;
+}
+
+/* ABOUT SECTION */
+.about-container {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+/* SAME SIZE IMAGES */
+.same-size-img {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  display: block;
+}
+
+/* COUNTRY SECTION */
+.location-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.country-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+}
+
+.flag-box {
+  margin: 0;
+  text-align: center;
+}
+
+.flag-box figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+/* RESOURCES IMAGE */
+.resource-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* RESOURCE LINKS */
+.resource-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.resource-list li {
+  margin: 0.65rem 0;
+}
+
+.resource-list a {
+  color: var(--link);
+}
+
+/* FOOTER */
+footer {
+  background: var(--footer);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
