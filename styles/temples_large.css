@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+
+  .top-bar {
+    padding-bottom: 0.5rem;
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+    align-items: start;
+  }
+
+  figure img {
+    max-width: 100%;
+  }
+}
