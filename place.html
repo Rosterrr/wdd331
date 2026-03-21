@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A country page about El Salvador with responsive images and weather information.">
+  <meta name="author" content="Your Name">
+  <title>El Salvador | Country Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>El Salvador</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/El-Salvador-Small.webp" media="(max-width: 700px)">
+        <source srcset="images/El-Salvador-Large.webp" media="(min-width: 701px)">
+        <img src="images/Landscape_of_El_Salvador.jpg" alt="Landscape view of El Salvador" width="1200" height="700">
+      </picture>
+    </section>
+
+    <section class="card data-card">
+      <h2>Data</h2>
+      <div class="info-grid">
+        <p><strong>Area:</strong></p>
+        <p>21,041 km²</p>
+
+        <p><strong>Population:</strong></p>
+        <p>6.3 million</p>
+
+        <p><strong>Capital:</strong></p>
+        <p>San Salvador</p>
+
+        <p><strong>Languages:</strong></p>
+        <p>Spanish</p>
+
+        <p><strong>Currency:</strong></p>
+        <p>US Dollar</p>
+
+        <p><strong>Time Zone:</strong></p>
+        <p>UTC -6</p>
+
+        <p><strong>Calling Code:</strong></p>
+        <p>+503</p>
+
+        <p><strong>Internet TLD:</strong></p>
+        <p>.sv</p>
+      </div>
+    </section>
+
+    <section class="card weather-card">
+      <h2>Weather</h2>
+
+      <img class="weather-icon-mobile" src="images/download.svg" alt="Partly cloudy weather icon" width="72" height="72">
+
+      <div class="info-grid">
+        <p><strong>Temperature:</strong></p>
+        <p><span id="temperature">28</span> °C</p>
+
+        <p><strong>Conditions:</strong></p>
+        <p>Partly Cloudy</p>
+
+        <p><strong>Wind:</strong></p>
+        <p><span id="windspeed">12</span> km/h</p>
+
+        <p><strong>Wind Chill:</strong></p>
+        <p><span id="windchill">N/A</span></p>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>About El Salvador</h2>
+      <p>
+        El Salvador is the smallest country in Central America, but it is full of natural beauty,
+        culture, and history. It is known for its volcanoes, beaches, warm climate, and hardworking people.
+        Many people visit El Salvador for surfing, mountain views, and traditional food such as pupusas.
+      </p>
+      <p>
+        The country has a strong sense of identity and community. Its landscapes include coastal areas,
+        green hills, lakes, and urban centers. El Salvador is a meaningful place to many because of its
+        traditions, family values, and the resilience of its people.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Your Name | El Salvador</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
