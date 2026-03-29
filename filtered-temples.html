@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <meta name="description" content="Responsive temple album page with filtering and hamburger menu.">
+  <meta name="author" content="Rodrigo Chanta">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 1024px)">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <h2>Temple Album</h2>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    </div>
+
+    <nav id="nav-menu" class="navigation">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="page-title">Home</h1>
+    <section id="temple-gallery" class="gallery"></section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 🌸 Rodrigo Chanta 🌸 El Salvador</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
