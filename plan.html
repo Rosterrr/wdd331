@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore El Salvador | Plan Your Trip</title>
+  <meta name="description" content="Use this form to build a simple travel plan for visiting El Salvador.">
+  <meta name="author" content="Rodrigo Adrian Chanta Rivas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">🌋 Explore El Salvador</a>
+      <button id="menuButton" class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav id="siteNav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="plan.html" class="active">Plan Your Trip</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container form-layout">
+      <section>
+        <h1>Plan Your Trip</h1>
+        <p>
+          Complete this form to save your travel preferences. Your last form selection will be
+          remembered with localStorage.
+        </p>
+
+        <form id="tripForm" class="trip-form">
+          <label for="travelerName">Name</label>
+          <input type="text" id="travelerName" name="travelerName" placeholder="Enter your name">
+
+          <label for="season">Preferred travel season</label>
+          <select id="season" name="season" required>
+            <option value="" disabled selected>Select a season</option>
+            <option value="dry">Dry season</option>
+            <option value="rainy">Rainy season</option>
+          </select>
+
+          <fieldset>
+            <legend>Main interest</legend>
+            <label><input type="radio" name="interest" value="beach" required> Beaches</label>
+            <label><input type="radio" name="interest" value="volcano"> Volcanoes</label>
+            <label><input type="radio" name="interest" value="town"> Towns and culture</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Activities you enjoy</legend>
+            <label><input type="checkbox" name="activities" value="food"> Local food</label>
+            <label><input type="checkbox" name="activities" value="hiking"> Hiking</label>
+            <label><input type="checkbox" name="activities" value="surfing"> Surfing</label>
+            <label><input type="checkbox" name="activities" value="photography"> Photography</label>
+          </fieldset>
+
+          <label for="tripNotes">Trip notes</label>
+          <textarea id="tripNotes" name="tripNotes" rows="5" placeholder="Tell us what kind of trip you want"></textarea>
+
+          <button type="submit" class="button">Save My Plan</button>
+        </form>
+      </section>
+
+      <aside class="card" id="planResult">
+        <h2>Suggested focus</h2>
+        <p>Your saved recommendation will appear here after you submit the form.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear"></span> Rodrigo Adrian Chanta Rivas | Explore El Salvador</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>

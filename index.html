@@ -1,89 +1,106 @@
-<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>WDD 131 – Dynamic Web Fundamentals – Rodrigo Chanta</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Rodrigo Chanta. Course landing page with assignments, resources, and project links.">
-  <meta name="author" content="Rodrigo Chanta">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore El Salvador | Home</title>
+  <meta name="description" content="Discover beaches, volcanoes, towns, and travel tips for exploring El Salvador.">
+  <meta name="author" content="Rodrigo Adrian Chanta Rivas">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdate.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
-
-    <nav class="navigation">
-      <a href="https://www.linkedin.com/in/rodrigo-chanta-rivas-758720208" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a>
-      <a href="#">Final Project</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">🌋 Explore El Salvador</a>
+      <button id="menuButton" class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav id="siteNav" class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="plan.html">Plan Your Trip</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Rodrigo Chanta</h1>
-
-    <section class="card">
-      <h2>About Me</h2>
-
-      <div class="about-container">
-        <div class="about-text">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Travel guide</p>
+          <h1>Experience the beauty of El Salvador</h1>
           <p>
-            My name is Rodrigo Chanta and I’m from El Salvador. I’m currently studying at BYU-Idaho and working in a
-            call center while I build my skills in web development and programming.
+            Explore volcanoes, beaches, colorful towns, and local food with a simple guide
+            created for travelers who want clear and useful information.
           </p>
-          <p>
-            I enjoy learning new technologies, improving my problem-solving skills, and working on projects that help me
-            grow as a developer.
-          </p>
+          <div class="hero-actions">
+            <a class="button" href="destinations.html">Explore Destinations</a>
+            <a class="button button-secondary" href="plan.html">Plan Your Visit</a>
+          </div>
         </div>
-
-        <img class="same-size-img" src="images/About_me.jpeg" alt="Profile photo of Rodrigo Chanta" loading="lazy">
-      </div>
-
-      <h3 class="location-title">El Salvador</h3>
-
-      <div class="location-container">
-        <figure class="flag-box">
-          <img src="images/El_Salvador.avif" alt="A view of El Salvador" class="country-img" loading="lazy">
-          <figcaption>El Salvador</figcaption>
-        </figure>
-
-        <p class="location-text">
-          El Salvador is a small country in Central America known for its volcanoes, beaches, and rich culture. I’m proud
-          to be from El Salvador and I’m excited to keep learning and improving through this course.
-        </p>
+        <img src="images/hero.jpg" alt="Scenic landscape in El Salvador" width="900" height="600">
       </div>
     </section>
 
-    <section class="card">
-      <h2>Web Dev Resources</h2>
-
-      <div class="resource-image-wrap">
-        <img class="same-size-img" src="images/course_home_page.jpeg" alt="Canvas dashboard screenshot" loading="lazy">
+    <section class="section">
+      <div class="container">
+        <h2>Why visit El Salvador?</h2>
+        <div class="info-grid">
+          <article class="card">
+            <h3>Natural variety</h3>
+            <p>Travelers can enjoy volcanoes, lakes, beaches, and mountain towns in short distances.</p>
+          </article>
+          <article class="card">
+            <h3>Culture and food</h3>
+            <p>Pupusas, local markets, and community traditions give every region its own character.</p>
+          </article>
+          <article class="card">
+            <h3>Easy trip planning</h3>
+            <p>This site helps users compare destinations and save favorites before they travel.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <ul class="resource-list">
-        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
-        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
-        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
-        <li><a href="https://web.dev/" target="_blank" rel="noopener noreferrer">web.dev</a></li>
-        <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">HTML Validator</a></li>
-      </ul>
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured destinations</h2>
+          <p>Click the heart button to save places you like. Your favorites are stored on your device.</p>
+        </div>
+        <div id="featuredList" class="card-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Travel tips</h2>
+          <ul class="tips-list">
+            <li>Bring lightweight clothes and comfortable shoes.</li>
+            <li>Plan beach and volcano visits early in the day.</li>
+            <li>Carry cash for some small shops and local businesses.</li>
+            <li>Respect local communities and protected natural areas.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Your saved favorites</h3>
+          <p id="favoriteCount">You have 0 saved destinations.</p>
+          <a class="button small-button" href="destinations.html">View all destinations</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Rodrigo Chanta • El Salvador</p>
-    <p id="lastModified"></p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear"></span> Rodrigo Adrian Chanta Rivas | Explore El Salvador</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
   </footer>
 </body>
 </html>

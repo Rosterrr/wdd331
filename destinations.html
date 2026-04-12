@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore El Salvador | Destinations</title>
+  <meta name="description" content="Browse recommended destinations in El Salvador and filter them by type.">
+  <meta name="author" content="Rodrigo Adrian Chanta Rivas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">🌋 Explore El Salvador</a>
+      <button id="menuButton" class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav id="siteNav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="plan.html">Plan Your Trip</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Destinations</h1>
+        <p>Use the filters to focus on the type of place you want to visit.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-button active-filter" data-filter="all">All</button>
+        <button class="filter-button" data-filter="beach">Beaches</button>
+        <button class="filter-button" data-filter="volcano">Volcanoes</button>
+        <button class="filter-button" data-filter="town">Towns</button>
+      </div>
+
+      <div id="destinationList" class="card-grid"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear"></span> Rodrigo Adrian Chanta Rivas | Explore El Salvador</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>
