@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 course home page for Rodrigo Chanta.">
+  <meta name="author" content="Rodrigo Chanta">
+
+  <title>WDD 231 - Rodrigo Chanta</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/schnauzer.jpg" alt="Site logo" class="logo">
+      <span>Rodrigo Chanta</span>
+    </div>
+
+    <button id="menu-button" aria-label="Open navigation menu">☰</button>
+  </header>
+
+  <nav id="navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Chamber Project</a>
+    <a href="#">Final Project</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="main-grid">
+      <section class="card about-card">
+        <h2>About Me</h2>
+        <p>
+          My name is Rodrigo Chanta. I am currently studying web development and improving my skills in HTML, CSS,
+          JavaScript, and professional web design. I enjoy learning how to create responsive websites that are useful,
+          organized, and visually clear for users. I am also focused on growing professionally and developing strong
+          problem-solving skills.
+        </p>
+      </section>
+
+      <section class="card photo-card">
+        <h2>Student Photo</h2>
+        <img src="images/About_me.jpeg" alt="Rodrigo Chanta student profile photo" class="profile-photo">
+      </section>
+
+      <section class="card courses-card">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="filter-buttons">
+          <button id="all" class="filter active-filter">All</button>
+          <button id="cse" class="filter">CSE</button>
+          <button id="wdd" class="filter">WDD</button>
+        </div>
+
+        <div id="course-container"></div>
+
+        <p id="total-credits"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/rodrigo-chanta-rivas-758720208/" target="_blank" rel="noopener">
+        <span class="social-icon">in</span>
+      </a>
+      <a href="https://github.com/Rosterrr/wdd331/" target="_blank" rel="noopener">
+        <span class="social-icon">GH</span>
+      </a>
+      <a href="https://x.com/" target="_blank" rel="noopener">
+        <span class="social-icon">X</span>
+      </a>
+    </div>
+
+    <p>
+      &copy;<span id="currentyear"></span> • Rodrigo Chanta • El Salvador
+    </p>
+
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
