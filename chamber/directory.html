@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Santa Elena Chamber of Commerce Directory</title>
+  <meta name="description" content="Directory page for the Santa Elena Chamber of Commerce featuring local businesses and organizations.">
+  <meta name="author" content="Rodrigo Chanta">
+
+  <meta property="og:title" content="Santa Elena Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore local businesses and organizations in the Santa Elena Chamber of Commerce directory.">
+  <meta property="og:image" content="https://rosterrr.github.io/wdd231/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://rosterrr.github.io/wdd331/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <div class="logo-box">SE</div>
+      <div>
+        <span class="site-name">Santa Elena</span>
+        <span class="site-subtitle">Chamber of Commerce</span>
+      </div>
+    </div>
+
+    <button id="menu-button" aria-label="Open navigation menu">☰</button>
+  </header>
+
+  <nav id="navigation">
+    <a href="directory.html" class="active">Directory</a>
+    <a href="#">Discover</a>
+    <a href="#">Join</a>
+  </nav>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <section class="directory-intro">
+      <h2>Local Business Members</h2>
+      <p>
+        Explore businesses and organizations that support the Santa Elena community.
+        Use the buttons below to switch between a grid view and a list view.
+      </p>
+    </section>
+
+    <section class="view-controls" aria-label="Directory view options">
+      <button id="grid-view" class="active-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </section>
+
+    <section id="members-container" class="grid-view" aria-label="Chamber member directory"></section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Santa Elena Chamber of Commerce</strong></p>
+      <p>Santa Elena, La Libertad, El Salvador</p>
+      <p>Email: info@santaelenachamber.org</p>
+      <p>Phone: +503 2222-0000</p>
+    </div>
+
+    <div class="footer-project">
+      <p>
+        &copy;<span id="currentyear"></span> Santa Elena Chamber of Commerce
+      </p>
+      <p>Rodrigo Chanta • WDD 231</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
