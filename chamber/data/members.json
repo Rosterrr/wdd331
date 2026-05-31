@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Santa Elena Pupuseria",
+      "address": "45 Avenida Sur, Santa Elena, El Salvador",
+      "phone": "+503 2222-1001",
+      "website": "https://example.com/pupuseria",
+      "image": "pupuseria.webp",
+      "membershipLevel": 1,
+      "description": "A local restaurant offering traditional Salvadoran food and friendly service."
+    },
+    {
+      "name": "Volcano Coffee House",
+      "address": "Plaza Santa Elena, La Libertad, El Salvador",
+      "phone": "+503 2222-1002",
+      "website": "https://example.com/coffee",
+      "image": "coffee.webp",
+      "membershipLevel": 2,
+      "description": "A coffee shop serving locally sourced coffee, pastries, and breakfast options."
+    },
+    {
+      "name": "Hotel Vista Verde",
+      "address": "Carretera Panamericana, Santa Elena, El Salvador",
+      "phone": "+503 2222-1003",
+      "website": "https://example.com/hotel",
+      "image": "hotel.webp",
+      "membershipLevel": 3,
+      "description": "A comfortable hotel for business travelers, tourists, and local events."
+    },
+    {
+      "name": "Santa Elena Medical Clinic",
+      "address": "Calle Principal #18, Santa Elena, El Salvador",
+      "phone": "+503 2222-1004",
+      "website": "https://example.com/clinic",
+      "image": "clinic.webp",
+      "membershipLevel": 3,
+      "description": "A community health clinic offering general medical care and wellness services."
+    },
+    {
+      "name": "Chanta Tech Solutions",
+      "address": "Business Center Santa Elena, El Salvador",
+      "phone": "+503 2222-1005",
+      "website": "https://example.com/tech",
+      "image": "tech.webp",
+      "membershipLevel": 2,
+      "description": "A technology service provider specializing in websites, support, and digital solutions."
+    },
+    {
+      "name": "La Familia Bakery",
+      "address": "3a Calle Poniente, Santa Elena, El Salvador",
+      "phone": "+503 2222-1006",
+      "website": "https://example.com/bakery",
+      "image": "bakery.webp",
+      "membershipLevel": 1,
+      "description": "A family-owned bakery providing fresh bread, desserts, and custom cakes."
+    },
+    {
+      "name": "Central Fresh Market",
+      "address": "Mercado Central Local 12, Santa Elena, El Salvador",
+      "phone": "+503 2222-1007",
+      "website": "https://example.com/market",
+      "image": "market.webp",
+      "membershipLevel": 1,
+      "description": "A local market offering fresh produce, household goods, and community products."
+    }
+  ]
+}
