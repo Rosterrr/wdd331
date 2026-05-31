@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website plan for Explore El Salvador, a tourism website focused on travel destinations, culture, food, and visitor information.">
+    <meta name="author" content="Rodrigo Chanta">
+    <title>Explore El Salvador Site Plan</title>
+
+    <style>
+        :root {
+            --primary-color: #0057a8;
+            --secondary-color: #f9c74f;
+            --background-color: #f7f9fc;
+            --text-color: #1f2937;
+            --card-color: #ffffff;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            background-color: var(--card-color);
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-family: Georgia, "Times New Roman", serif;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.3rem;
+        }
+
+        h3 {
+            color: var(--primary-color);
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 160px;
+            height: 80px;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            vertical-align: top;
+        }
+
+        .primary {
+            background-color: var(--primary-color);
+        }
+
+        .secondary {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        .wireframes {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .wireframe {
+            border: 2px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: #eef5ff;
+        }
+
+        .wire-box {
+            border: 2px dashed #555;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            text-align: center;
+            background-color: white;
+        }
+
+        .desktop-wireframe {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 0.5rem;
+        }
+
+        .full {
+            grid-column: 1 / 3;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            .desktop-wireframe {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Explore El Salvador Site Plan</h1>
+        <p>Website Planning Document</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Explore El Salvador</strong></p>
+            <p>
+                This name was selected because the website will help visitors discover travel destinations,
+                culture, food, beaches, volcanoes, and historical places in El Salvador. The name is simple,
+                memorable, and clearly connected to tourism.
+            </p>
+            <p><strong>Optional domain:</strong> exploreelsalvador.org</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>
+                The purpose of this website is to provide helpful tourism information about El Salvador.
+                The site will highlight popular destinations, local food, cultural experiences, travel tips,
+                and recommended places to visit. It will help tourists and local visitors plan trips and learn
+                more about the country.
+            </p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What are the best places to visit in El Salvador for a first-time tourist?</li>
+                <li>Where can I find information about beaches, volcanoes, food, and cultural destinations?</li>
+                <li>What activities can visitors do while traveling in El Salvador?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Scheme</h2>
+            <p>The website will use colors inspired by El Salvador’s flag, nature, and tourism identity.</p>
+
+            <div class="color-box primary">
+                Primary Blue<br>
+                #0057A8
+            </div>
+
+            <div class="color-box secondary">
+                Accent Yellow<br>
+                #F9C74F
+            </div>
+
+            <p>
+                <strong>Primary Blue:</strong> Used for headings, header, footer, navigation, and important design accents.
+            </p>
+            <p>
+                <strong>Accent Yellow:</strong> Used for buttons, highlights, borders, and call-to-action areas.
+            </p>
+            <p>
+                <strong>Light Background:</strong> Used behind content sections to keep the page clean and easy to read.
+            </p>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>
+                <strong>Georgia:</strong> Used for main headings and section headings to give the site a formal and attractive look.
+            </p>
+            <p>
+                <strong>Arial:</strong> Used for body text, paragraphs, navigation, and general page content because it is clean and easy to read.
+            </p>
+        </section>
+
+        <section>
+            <h2>Wireframe</h2>
+
+            <div class="wireframes">
+                <div class="wireframe">
+                    <h3>Mobile View</h3>
+                    <div class="wire-box">Header / Logo</div>
+                    <div class="wire-box">Navigation Menu</div>
+                    <div class="wire-box">Hero Image</div>
+                    <div class="wire-box">Welcome Message</div>
+                    <div class="wire-box">Featured Destination Card</div>
+                    <div class="wire-box">Food and Culture Card</div>
+                    <div class="wire-box">Travel Tips Section</div>
+                    <div class="wire-box">Footer</div>
+                </div>
+
+                <div class="wireframe">
+                    <h3>Desktop / Tablet View</h3>
+                    <div class="desktop-wireframe">
+                        <div class="wire-box full">Header with Logo and Navigation</div>
+                        <div class="wire-box full">Large Hero Image with Welcome Text</div>
+                        <div class="wire-box">Featured Destinations</div>
+                        <div class="wire-box">Travel Tips</div>
+                        <div class="wire-box">Food and Culture</div>
+                        <div class="wire-box">Upcoming Events or Popular Activities</div>
+                        <div class="wire-box full">Footer with Contact and Social Links</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Explore El Salvador Site Plan | Rodrigo Chanta</p>
+    </footer>
+</body>
+</html>
