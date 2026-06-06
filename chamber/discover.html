@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover San Salvador through local attractions, cultural sites, parks, and business-friendly community features.">
+  <meta name="author" content="Rodrigo Chanta">
+
+  <meta property="og:title" content="Discover San Salvador Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/national-theater.webp">
+  <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/discover.html">
+
+  <title>Discover San Salvador | Chamber of Commerce</title>
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/discover.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/favicon.ico" alt="San Salvador Chamber of Commerce logo" width="80" height="80">
+      <div>
+        <span class="site-name">San Salvador</span>
+        <span class="site-purpose">Chamber of Commerce</span>
+      </div>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+
+    <nav id="navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html" class="active">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="discover-hero">
+      <h1>Discover San Salvador</h1>
+      <p>
+        Explore cultural landmarks, business districts, green spaces, and visitor attractions
+        that make San Salvador a strong place to visit, invest, and grow.
+      </p>
+    </section>
+
+    <aside id="visit-message" class="visit-message"></aside>
+
+    <section class="discover-intro">
+      <h2>Community Highlights</h2>
+      <p>
+        These featured locations show the history, culture, recreation, and economic potential
+        of the San Salvador area.
+      </p>
+    </section>
+
+    <section id="discover-cards" class="discover-grid" aria-label="San Salvador places of interest"></section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>San Salvador Chamber of Commerce</strong></p>
+      <p>San Salvador, El Salvador</p>
+      <p>info@sansalvadorchamber.org</p>
+      <p>+503 2222-0000</p>
+    </div>
+
+    <div>
+      <p>WDD 231 Chamber Project</p>
+      <p>Rodrigo Chanta</p>
+      <p>&copy; <span id="currentyear"></span> San Salvador Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

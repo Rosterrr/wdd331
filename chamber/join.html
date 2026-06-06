@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Santa Elena Chamber of Commerce and choose a membership level that supports your business or organization.">
+    <meta name="author" content="Rodrigo Chanta">
+
+    <meta property="og:title" content="Join | Santa Elena Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/santa-elena.webp">
+    <meta property="og:url" content="https://rodrigochanta331.github.io/wdd231/chamber/join.html">
+
+    <title>Join | Santa Elena Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+            <img src="images/favicon.ico" alt="Santa Elena Chamber of Commerce logo" width="80" height="80">
+            <div>
+                <span>Santa Elena</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Santa Elena Chamber of Commerce</h1>
+
+        <div class="join-layout">
+            <section class="join-form-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label>
+                        First Name
+                        <input 
+                            type="text" 
+                            name="first-name" 
+                            title="Enter your first name" 
+                            autocomplete="given-name" 
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input 
+                            type="text" 
+                            name="last-name" 
+                            title="Enter your last name" 
+                            autocomplete="family-name" 
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input 
+                            type="text" 
+                            name="organization-title" 
+                            title="Enter your organizational title. Use only letters, hyphens, and spaces. Minimum seven characters." 
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input 
+                            type="email" 
+                            name="email" 
+                            title="Enter your email address" 
+                            autocomplete="email" 
+                            placeholder="example@email.com" 
+                            required>
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            title="Enter your mobile phone number" 
+                            autocomplete="tel" 
+                            required>
+                    </label>
+
+                    <label>
+                        Business or Organization Name
+                        <input 
+                            type="text" 
+                            name="organization" 
+                            title="Enter the name of your business or organization" 
+                            autocomplete="organization" 
+                            required>
+                    </label>
+
+                    <fieldset>
+                        <legend>Membership Level</legend>
+
+                        <label>
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership - Non Profit Organizations
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label>
+                        Business or Organization Description
+                        <textarea 
+                            name="description" 
+                            title="Describe your business or organization" 
+                            rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Membership Application">
+                </form>
+            </section>
+
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For non profit organizations. No membership fee.</p>
+                        <a href="#np-modal" data-modal="np-modal">Learn More</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic support and visibility for small businesses.</p>
+                        <a href="#bronze-modal" data-modal="bronze-modal">Learn More</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Additional training, advertising, and event benefits.</p>
+                        <a href="#silver-modal" data-modal="silver-modal">Learn More</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium exposure, event discounts, and spotlight opportunities.</p>
+                        <a href="#gold-modal" data-modal="gold-modal">Learn More</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <p>This level is designed for non profit organizations and has no fee.</p>
+            <ul>
+                <li>Community networking opportunities</li>
+                <li>Access to chamber announcements</li>
+                <li>Participation in selected community events</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <p>This level provides basic support for local businesses.</p>
+            <ul>
+                <li>Business listing in the chamber directory</li>
+                <li>Access to member events</li>
+                <li>Basic networking opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership Benefits</h2>
+            <p>This level offers more visibility and professional development opportunities.</p>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Training workshops</li>
+                <li>Advertising opportunities</li>
+                <li>Discounts for selected chamber events</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership Benefits</h2>
+            <p>This level provides the highest amount of exposure and chamber support.</p>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Homepage spotlight opportunities</li>
+                <li>Premium event discounts</li>
+                <li>Priority promotion in chamber activities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Santa Elena Chamber of Commerce</h2>
+            <p>Santa Elena, El Salvador</p>
+            <p>info@santaelenachamber.org</p>
+            <p>+503 2222-3333</p>
+        </div>
+
+        <div>
+            <p>&copy; <span id="currentyear"></span> Santa Elena Chamber of Commerce</p>
+            <p>Rodrigo Chanta • WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector("#menu");
+        const navigation = document.querySelector("#navigation");
+
+        if (menuButton && navigation) {
+            menuButton.addEventListener("click", () => {
+                navigation.classList.toggle("open");
+                menuButton.classList.toggle("open");
+            });
+        }
+
+        document.querySelector("#currentyear").textContent = new Date().getFullYear();
+        document.querySelector("#lastModified").textContent = document.lastModified;
+
+        document.querySelector("#timestamp").value = new Date().toISOString();
+
+        const modalLinks = document.querySelectorAll("[data-modal]");
+        const closeButtons = document.querySelectorAll(".close-modal");
+
+        modalLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                const modal = document.querySelector(`#${link.dataset.modal}`);
+                modal.showModal();
+            });
+        });
+
+        closeButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                button.closest("dialog").close();
+            });
+        });
+    </script>
+</body>
+</html>
