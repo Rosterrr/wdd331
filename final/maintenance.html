@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maintenance Services | Elantra 2018 Guide</title>
+    <meta name="description" content="Explore dynamic maintenance service cards for a Hyundai Elantra 2018 using local JSON data and interactive filters.">
+    <meta name="author" content="Rodrigo Chanta">
+    <meta property="og:title" content="Maintenance Services | Elantra 2018 Guide">
+    <meta property="og:description" content="Explore dynamic maintenance service cards for a Hyundai Elantra 2018 using local JSON data and interactive filters.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Elantra2018.png">
+    <link rel="icon" href="images/Elantra2018.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-wrap">
+            <a class="logo" href="index.html">
+                <img src="images/Elantra2018.png" alt="" width="42" height="42">
+                <span>Elantra Care</span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="maintenance.html" class="active" aria-current="page">Maintenance</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Maintenance Services</h1>
+                <p>These service cards are generated from a local JSON file using the Fetch API. Use the filter to focus on one maintenance category.</p>
+            </div>
+            <img src="images/safety-check.svg" alt="Vehicle safety shield illustration" width="600" height="380">
+        </section>
+        <section aria-labelledby="guide-title">
+            <h2 id="guide-title" class="section-title">Interactive Guide</h2>
+            <div class="controls">
+                <div><label for="category-filter">Filter by category</label><select id="category-filter" name="category-filter"><option value="all">All categories</option></select></div>
+                <p id="service-count" aria-live="polite">Loading maintenance items...</p>
+            </div>
+            <div id="service-cards" class="card-grid" aria-live="polite"></div>
+        </section>
+        <dialog id="service-modal" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <h2 id="modal-title">Service Details</h2>
+                <div id="modal-body"></div>
+                <button id="close-modal" class="button" type="button">Close</button>
+            </div>
+        </dialog>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-wrap">
+            <p>&copy; <span id="current-year"></span> Rodrigo Chanta | Hyundai Elantra 2018 Maintenance Guide</p>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">Video Demo</a>
+            </div>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/maintenance.js" type="module"></script>
+</body>
+</html>

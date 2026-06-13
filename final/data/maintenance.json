@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "service": "Engine Oil and Filter Change",
+    "category": "Engine",
+    "interval": "Every 5,000 to 7,500 miles",
+    "estimatedCost": "$45-$85",
+    "priority": "High",
+    "description": "Keeps the engine lubricated, reduces friction, and helps prevent premature engine wear.",
+    "details": "Use the oil grade recommended in the owner manual. Check the oil level regularly if the car is driven in traffic, heat, or dusty conditions."
+  },
+  {
+    "id": 2,
+    "service": "Air Filter Replacement",
+    "category": "Engine",
+    "interval": "Every 12,000 to 15,000 miles",
+    "estimatedCost": "$15-$35",
+    "priority": "Medium",
+    "description": "Improves airflow to the engine and can help with fuel economy and acceleration response.",
+    "details": "A dirty air filter can make the engine work harder. Inspect sooner if the vehicle is driven on dusty roads."
+  },
+  {
+    "id": 3,
+    "service": "Cabin Air Filter Replacement",
+    "category": "Comfort",
+    "interval": "Every 12,000 miles",
+    "estimatedCost": "$15-$40",
+    "priority": "Medium",
+    "description": "Helps keep dust, pollen, and odors out of the cabin air system.",
+    "details": "Replace it sooner if the air conditioner smells bad or airflow from the vents feels weak."
+  },
+  {
+    "id": 4,
+    "service": "Brake Pad Inspection",
+    "category": "Brakes",
+    "interval": "Every 10,000 miles",
+    "estimatedCost": "$0-$40 inspection",
+    "priority": "High",
+    "description": "Checks brake pad thickness, rotor condition, and possible brake noise causes.",
+    "details": "Squealing, grinding, vibration, or longer stopping distance means the brakes should be inspected immediately."
+  },
+  {
+    "id": 5,
+    "service": "Brake Fluid Service",
+    "category": "Brakes",
+    "interval": "Every 2 to 3 years",
+    "estimatedCost": "$50-$100",
+    "priority": "High",
+    "description": "Removes moisture-contaminated brake fluid and supports safe braking performance.",
+    "details": "Brake fluid absorbs moisture over time. Old fluid can reduce braking performance and damage brake components."
+  },
+  {
+    "id": 6,
+    "service": "Front Strut Inspection",
+    "category": "Suspension",
+    "interval": "Every 20,000 miles or when symptoms appear",
+    "estimatedCost": "$0-$50 inspection",
+    "priority": "Medium",
+    "description": "Checks for leaks, bouncing, clunking, uneven tire wear, and reduced ride control.",
+    "details": "Worn struts can affect comfort, steering stability, braking distance, and tire wear."
+  },
+  {
+    "id": 7,
+    "service": "Tire Rotation",
+    "category": "Tires",
+    "interval": "Every 5,000 to 7,500 miles",
+    "estimatedCost": "$15-$35",
+    "priority": "Medium",
+    "description": "Helps tires wear evenly and can extend tire life.",
+    "details": "Uneven tire wear may also point to alignment, suspension, or tire pressure issues."
+  },
+  {
+    "id": 8,
+    "service": "Wheel Alignment Check",
+    "category": "Tires",
+    "interval": "Every year or after suspension work",
+    "estimatedCost": "$40-$90",
+    "priority": "Medium",
+    "description": "Helps the car track straight and reduces uneven tire wear.",
+    "details": "Alignment should be checked after replacing struts, tie rods, control arms, or after hitting a large pothole."
+  },
+  {
+    "id": 9,
+    "service": "Battery Test",
+    "category": "Electrical",
+    "interval": "Every 6 months",
+    "estimatedCost": "$0-$25 test",
+    "priority": "Medium",
+    "description": "Checks battery health, charging voltage, and starting reliability.",
+    "details": "Battery weakness can cause hard starts, warning lights, or electrical issues. Heat can shorten battery life."
+  },
+  {
+    "id": 10,
+    "service": "Exterior and Interior Light Check",
+    "category": "Electrical",
+    "interval": "Monthly",
+    "estimatedCost": "$0-$20 per bulb",
+    "priority": "Medium",
+    "description": "Confirms headlights, brake lights, turn signals, reverse lights, and cabin lights work correctly.",
+    "details": "If several interior lights stop working together, check the fuse, switch position, bulb condition, and wiring."
+  },
+  {
+    "id": 11,
+    "service": "Coolant Level and Condition Check",
+    "category": "Cooling",
+    "interval": "Every 6 months",
+    "estimatedCost": "$0-$30 inspection",
+    "priority": "High",
+    "description": "Helps prevent overheating and protects the cooling system.",
+    "details": "Never open the radiator cap when the engine is hot. Low coolant may indicate a leak."
+  },
+  {
+    "id": 12,
+    "service": "Transmission Fluid Inspection",
+    "category": "Drivetrain",
+    "interval": "Every 30,000 miles",
+    "estimatedCost": "$0-$50 inspection",
+    "priority": "Medium",
+    "description": "Checks fluid level and condition to support smooth shifting.",
+    "details": "Dark, burnt-smelling fluid or rough shifting should be checked by a qualified technician."
+  },
+  {
+    "id": 13,
+    "service": "Spark Plug Inspection",
+    "category": "Engine",
+    "interval": "Around 60,000 to 100,000 miles",
+    "estimatedCost": "$80-$180",
+    "priority": "Medium",
+    "description": "Supports smooth engine performance, fuel economy, and reliable starting.",
+    "details": "Misfires, rough idle, or poor acceleration can be signs of worn spark plugs or ignition components."
+  },
+  {
+    "id": 14,
+    "service": "Throttle Body Cleaning",
+    "category": "Engine",
+    "interval": "As needed or every 30,000 miles",
+    "estimatedCost": "$40-$90",
+    "priority": "Low",
+    "description": "Can help with rough idle, hesitation, or sticky throttle response.",
+    "details": "Cleaning should be done carefully with the correct cleaner and procedure to avoid sensor or throttle plate damage."
+  },
+  {
+    "id": 15,
+    "service": "Blind Spot Detection System Check",
+    "category": "Safety",
+    "interval": "When warning lights appear",
+    "estimatedCost": "$40-$150 diagnosis",
+    "priority": "High",
+    "description": "Checks sensors, wiring, calibration, and warning indicators for the blind spot system.",
+    "details": "After rear body damage or bumper work, blind spot sensors may need inspection or calibration."
+  }
+]

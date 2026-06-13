@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Service Request Form | Elantra 2018 Guide</title>
+    <meta name="description" content="Send a maintenance concern through a responsive HTML form and review the submitted information.">
+    <meta name="author" content="Rodrigo Chanta">
+    <meta property="og:title" content="Service Request Form | Elantra 2018 Guide">
+    <meta property="og:description" content="Send a maintenance concern through a responsive HTML form and review the submitted information.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Elantra2018.png">
+    <link rel="icon" href="images/Elantra2018.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-wrap">
+            <a class="logo" href="index.html">
+                <img src="images/Elantra2018.png" alt="" width="42" height="42">
+                <span>Elantra Care</span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="maintenance.html">Maintenance</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Maintenance Request</h1>
+                <p>Use this form to describe a vehicle concern. After submitting, the action page will display the information you entered.</p>
+            </div>
+            <img src="images/elantra-2018.png" alt="Simple illustration of a car and repair tools" width="600" height="380">
+        </section>
+        <section class="form-card" aria-labelledby="form-title">
+            <h2 id="form-title">Service Concern Form</h2>
+            <form action="form-action.html" method="get">
+                <div class="form-grid">
+                    <label for="full-name">Full Name<input type="text" id="full-name" name="full-name" autocomplete="name" required></label>
+                    <label for="email">Email<input type="email" id="email" name="email" autocomplete="email" required></label>
+                    <label for="mileage">Current Mileage<input type="number" id="mileage" name="mileage" min="0" step="1" required></label>
+                    <label for="category">Main Concern<select id="category" name="category" required><option value="">Choose one</option><option value="brakes">Brakes</option><option value="engine">Engine</option><option value="electrical">Electrical</option><option value="suspension">Suspension</option><option value="tires">Tires</option><option value="safety">Safety System</option></select></label>
+                    <fieldset><legend>Symptoms noticed</legend><label class="check-row"><input type="checkbox" name="symptoms" value="warning-light">Warning light</label><label class="check-row"><input type="checkbox" name="symptoms" value="noise">Unusual noise</label><label class="check-row"><input type="checkbox" name="symptoms" value="vibration">Vibration</label><label class="check-row"><input type="checkbox" name="symptoms" value="fluid-leak">Fluid leak</label></fieldset>
+                    <label for="message">Describe the issue<textarea id="message" name="message" required></textarea></label>
+                    <button class="button" type="submit">Submit Request</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-wrap">
+            <p>&copy; <span id="current-year"></span> Rodrigo Chanta | Hyundai Elantra 2018 Maintenance Guide</p>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">Video Demo</a>
+            </div>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
